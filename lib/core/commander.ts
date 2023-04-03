@@ -59,7 +59,7 @@ export default function registerCommanders(program: Command) {
         .description("从远程仓库获取最新内容")
         .argument("<branch>", "branch to fetch")
         .action((branch) => {
-            execSyncWithD(`git fetch origin ${branch}`)
+            execSyncWithD(`git pull origin ${branch}`)
         })
 }
 
