@@ -12,7 +12,7 @@ export interface Command {
     options?: Option[]
 }
 
-
+// d
 export const commands: Command[] = [
     {
         name: "gi",
